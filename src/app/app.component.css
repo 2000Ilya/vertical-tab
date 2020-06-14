@@ -1,0 +1,10 @@
+.header {
+  max-height: 80px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  border-color: #000000;
+  border-style: solid none solid none;
+  border-width: 5px;
+  padding: 19px 31px;
+}

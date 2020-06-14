@@ -1,0 +1,15 @@
+<div class="tab">
+  <div class="tab-button-container">
+    <button *ngFor="let tab of tabs" [ngClass]="'tab-button ' + tabs.indexOf(tab)" (click)="toggleTabs(tab)">
+      {{ tab.tab_name }}
+    </button>
+  </div>
+  <div class="tab-info-container">
+    <div *ngFor="let tab of tabs">
+      <div *ngIf="'tab-info ' + tabs.indexOf(tab) == clicked_tab" [ngClass]="'tab-info ' + tabs.indexOf(tab)">
+        <h1 class="tab-info-header">{{ tab.tab_name }}</h1>
+        <p class="tab-info-text">{{ tab.tab_info }}</p>
+      </div>
+    </div>
+  </div>
+</div>
