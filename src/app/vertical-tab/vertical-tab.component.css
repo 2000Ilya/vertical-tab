@@ -5,15 +5,22 @@
   height: calc(100vh - 90px);
 }
 
-.tab-button-container {
+.tab-side-menu {
   display: grid;
   grid-template-columns: auto;
   grid-gap: 15px;
   padding-top: 13px;
-  height: 90px;
   width: 460px;
   grid-area: tab-button-container;
   border: 5px;
+  overflow: scroll;
+  height: min-content;
+  max-height: calc(100vh - 103px);
+}
+
+.tab-button-container {
+  margin: 0 auto;
+  height: 90px;
 }
 
 .tab-info-container {
@@ -23,6 +30,8 @@
   border-left: black;
   border-style: none none none solid;
   border-width: 5px;
+  overflow: scroll;
+  max-height: calc(100vh - 110px);
 }
 
 .tab-info-header {
@@ -44,11 +53,24 @@
   letter-spacing: -0.6px;
   text-align: left;
   padding-left: 30px;
+  outline: none;
 }
 
 .tab-button:hover {
   background-color: rgba(57, 104, 257, 1);
   color: #ffffff;
+}
+
+.tab-button.add {
+  text-align: center;
+  color: green;
+  font-size: 45px;
+  padding: 0;
+}
+
+.tab-button.add:hover {
+  color: #ffffff;
+  background-color: green;
 }
 
 .tab-info-text {
@@ -59,7 +81,7 @@
   line-height: 27px;
 }
 
-.tab-button-container,
+.tab-side-menu,
 .tab-info-container {
   font-family: 'Roboto', sans-serif;
 }

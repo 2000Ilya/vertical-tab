@@ -1,8 +1,9 @@
 <div class="tab">
-  <div class="tab-button-container">
-    <button *ngFor="let tab of tabs" [ngClass]="'tab-button ' + tabs.indexOf(tab)" (click)="toggleTabs(tab)">
-      {{ tab.tab_name }}
-    </button>
+  <div class="tab-side-menu">
+    <app-tab-button class="tab-button-container" *ngFor="let tab of tabs" [tab_button_name]="tab.tab_name"
+      [tab_number]="tabs.indexOf(tab)" [tab_is_clicked]="tab.is_clicked" (click)="toggleTabs(tab)">
+    </app-tab-button>
+    <button class="tab-button add" (click)="addTab()">+</button>
   </div>
   <div class="tab-info-container">
     <div *ngFor="let tab of tabs">

@@ -1,0 +1,27 @@
+.tab-button {
+  height: 90px;
+  width: 430px;
+  margin: 0 auto;
+  padding: 0 0;
+  border: none;
+  background-color: #ffffff;
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.tab-button:hover {
+  background-color: rgba(57, 104, 257, 1);
+  color: #ffffff;
+}
+
+.tab-button:focus {
+  outline: 0;
+}
+
+.blue {
+  background-color: rgba(57, 104, 257, 1);
+  color: #ffffff;
+}

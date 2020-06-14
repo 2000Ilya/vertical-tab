@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { VerticalTabComponent } from './vertical-tab/vertical-tab.component';
+import { TabButtonComponent } from './tab-button/tab-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    VerticalTabComponent
+    VerticalTabComponent,
+    TabButtonComponent
   ],
   imports: [
     BrowserModule
